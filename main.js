@@ -50,10 +50,11 @@ function descobrirSigno() {
     } else if (mes == 1 && dia >= 21 || mes == 2 && dia <= 19) {
         res.innerHTML = `Seu signo é <p>Áquario</p>`
         img.setAttribute('src', 'img/aquario.png')
-    } else //if(mes == 2 && dia >= 19 || mes == 3 && dia <= 19) {
-    {
+    } else if(mes == 2 && dia >= 19 && dia <= 29|| mes == 3 && dia <= 19) {
         res.innerHTML = `Seu signo é <p>Peixes</p>`
         img.setAttribute('src', 'img/peixes.png')
+    }else{
+        alert('[ERRO] Você digitou alguma informação incorreta')
     }
 
     //Estilizando a imagem e a resposta

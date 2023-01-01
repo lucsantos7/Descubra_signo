@@ -78,11 +78,7 @@ p {
         width:60vw;
     }
 
-    #botão-verificar { 
-        font-size: 10px;
-        text-align: center;
-        width:100px;
-        padding:2px 5px;
+    #botao-verificar { 
         opacity: 1;
     }
 

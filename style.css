@@ -79,7 +79,9 @@ p {
     }
 
     #botão-verificar { 
-        width:90px;
+        font-size: 10px;
+        text-align: center;
+        width:100px;
         padding:2px 5px;
         opacity: 1;
     }

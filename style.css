@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(255, 166, 0);
+    font: normal 16px Arial;
+}
+
+/*Texto principal*/
+h1 {
+    text-align: center;
+    color: white;
+}
+
+/*Área do formulário*/
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+    width: 500px;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#form {
+    justify-self: center;
+}
+
+/*Título dos campos de preenchimento*/
+label {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*Campo de preencher no formulário*/
+input {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin: 10px auto;
+    width: 100px;
+
+}
+
+/*Botão para acionar o formulário*/
+#botao-verificar {
+    background-color: blue;
+    color: white;
+    padding: 3px;
+    width: 70px;
+    border: 2px solid black;
+    border-radius: 5px;
+    opacity: 0.4;
+}
+
+#botao-verificar:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#res {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*tag para editar resposta do formulário*/
+p {
+    color: red;
+    font-size: 32px;
+    margin: 0;
+}
+
+/*design responsivo*/
+@media screen and (max-width:465px){
+    .container{
+        width:60vw;
+    }
+
+    #botão-verificar { 
+        opacity: 1;
+    }
+
+}

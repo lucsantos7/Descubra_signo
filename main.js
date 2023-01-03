@@ -8,16 +8,15 @@ function descobrirSigno() {
     //Encontrar valores inseridos no formulário
     var dia = document.querySelector('#dia').value
     var mes = document.querySelector('#mes').value
+    
+    var img = document.createElement('img')
+    img.setAttribute('id', 'foto')
 
     if (dia.length == 0 || dia == 0 || dia > 31 || mes.length == 0 || mes == 0 || mes > 12 || mes == 2 && dia > 29) {
-        alert('[ERRO] Você digitou alguma informação incorreta')
+        res.innerHTML = `Você digitou alguma informação incorreta`
 
         //Criando a imagem dinâmica após a resposta
-    } else {
-        var img = document.createElement('img')
-        img.setAttribute('id', 'foto')
-    }
-    if (mes == 3 && dia >= 20 || mes == 4 && dia <= 20) {
+    }else if (mes == 3 && dia >= 20 || mes == 4 && dia <= 20) {
         img.setAttribute('src', 'img/aries.png')
         res.innerHTML = `Seu signo é <p>Áries</p>`
     } else if (mes == 4 && dia >= 21 || mes == 5 && dia <= 20) {
@@ -54,7 +53,7 @@ function descobrirSigno() {
         res.innerHTML = `Seu signo é <p>Peixes</p>`
         img.setAttribute('src', 'img/peixes.png')
     }else{
-        alert('[ERRO] Você digitou alguma informação incorreta')
+        res.innerHTML = `Você digitou alguma informação incorreta`
     }
 
     //Estilizando a imagem e a resposta

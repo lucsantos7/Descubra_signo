@@ -13,7 +13,7 @@ function descobrirSigno() {
     img.setAttribute('id', 'foto')
 
     if (dia.length == 0 || dia == 0 || dia > 31 || mes.length == 0 || mes == 0 || mes > 12 || mes == 2 && dia > 29) {
-        res.innerHTML = `Você digitou alguma informação incorreta`
+        res.innerHTML = `<p>Você digitou alguma informação incorreta!</p>`
 
         //Criando a imagem dinâmica após a resposta
     }else if (mes == 3 && dia >= 20 || mes == 4 && dia <= 20) {
@@ -53,7 +53,7 @@ function descobrirSigno() {
         res.innerHTML = `Seu signo é <p>Peixes</p>`
         img.setAttribute('src', 'img/peixes.png')
     }else{
-        res.innerHTML = `Você digitou alguma informação incorreta`
+        res.innerHTML = `<p>Você digitou alguma informação incorreta!</p>`
     }
 
     //Estilizando a imagem e a resposta

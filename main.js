@@ -64,14 +64,8 @@ function descobrirSigno() {
         img.setAttribute = 'none'
     }
 
-    //Estilizando a imagem e a resposta
+    //Atribuindo a imagem com a resposta do formulário
     res.appendChild(img)
-    res.style.textAlign = 'center'
-    img.style.padding = '10px 0'
-    img.style.borderRadius = '50px'
-    img.style.display = 'block'
-    img.style.margin = '0px auto'
-    img.style.maxWidth = '200px'
 
 }
 //Adicionando evento ao clicar no botão 

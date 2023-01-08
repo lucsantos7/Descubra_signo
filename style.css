@@ -63,6 +63,7 @@ input {
 #res {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 /*tag para editar resposta do formulário*/
@@ -70,6 +71,14 @@ p {
     color: red;
     font-size: 32px;
     margin: 0;
+}
+
+#foto{
+    padding:10px 0;
+    border-radius:50px;
+    display:block;
+    margin:0px auto;
+    width:200px;
 }
 
 /*design responsivo*/
@@ -81,6 +90,10 @@ p {
     #botao-verificar { 
         opacity: 1;
         text-align: center
+    }
+
+    #foto{
+        width:150px;
     }
 
 }

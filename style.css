@@ -92,15 +92,15 @@ p {
         text-align: center
     }
 
-    #foto{
-        width:150px;
-    }
-
 }
 
 @media screen and (max-width:376px){
     #botao-verificar{
         width: 100px;
         opacity:1;
+    }
+
+    #foto{
+        width:150px;
     }
 }
